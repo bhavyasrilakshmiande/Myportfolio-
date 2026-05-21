@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+      }
+
+      header {
+        background: teal;
+        color: white;
+        padding: 40px;
+      }
+
+      nav {
+        background: #222;
+        padding: 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 25px;
+        font-size: 18px;
+      }
+
+      section {
+        background: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      button {
+        background: teal;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: darkcyan;
+      }
+
+      ul {
+        list-style-type: square;
+        text-align: left;
+        display: inline-block;
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      #topBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to My Portfolio Website</h1>
+      <h2>Ande Bhavya Sri Lakshmi</h2>
+      <p>Web Development Intern</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#Education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+      <h2>My Portfolio</h2>
+
+      <img src="myphoto.jpg" alt="My Photo" width="100" />
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        passionate about AI,Web Development and Modern Technologies<br />
+        AI tools.
+      </p>
+      <button onclick="showContent()">Know More</button>
+      <div id="aboutContent" style="display: none; margin-top: 20px">
+        <p>
+          I am currently pursuing B-Tech with CGPA of 8.1 at<em>
+            Swarnandhra College Of Engineering And Technology in the Branch of
+            Artificial Intelligence and Machine Learning.</em
+          ><br />I have a strong interest in Artificial intelligence and Web
+          Development.
+        </p>
+        <p>
+          I have completed AI-related certifications from IBM SkillBuild and
+          continuously work on improving my technical and problem-solving skills
+          and continuosly practice coding,website development,and turning them
+          into real applications.
+        </p>
+        <p>
+          My goal is o become a successful Ai Engineering and contribute to
+          smart and useful technology solutions. i am alwats motivated to learn
+          new skills,gain practical experience,and grow in the field of
+          technlogy.
+        </p>
+        <p>you can <strong> click here</strong>to check out</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <p>
+        <strong>B.Tech</strong> â€“ Swarnandhra College of Engineering and
+        Technology
+      </p>
+      <p>
+        <strong>Branch:</strong> Artificial Intelligence and Machine Learning
+      </p>
+      <p>CGPA: 8.1</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript Basics</li>
+        <li>python</li>
+        <li>DSA</li>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Natural Language Processing</li>
+        <li>Reinforcement Learning</li>
+        <li>AI Tools</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>sudoku-generator</li>
+        <li>snake-game</li>
+        <li>Sales-dashboard</li>
+        <li>data-analysis</li>
+        <li>tic-tac-toe</li>
+      </ul>
+      <button onclick="showProjects()">View Projects</button>
+
+      <div id="projectLinks" style="display: none; margin-top: 20px">
+        <p>
+          <a
+            href="https://github.com/bhavyasrilakshmiande/sudoku-generator"
+            target="_blank"
+          >
+            Sudoku Generator
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://github.com/bhavyasrilakshmiande/snake-game"
+            target="_blank"
+          >
+            Snake Game
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://github.com/bhavyasrilakshmiande/sales-dashboard"
+            target="_blank"
+          >
+            Sales Dashboard
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://github.com/bhavyasrilakshmiande/data-analysis"
+            target="_blank"
+          >
+            Data Analysis
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://github.com/bhavyasrilakshmiande/tic-tac-toe"
+            target="_blank"
+          >
+            Tic Tac Toe
+          </a>
+        </p>
+      </div>
+
+      <script>
+        function showProjects() {
+          var projects = document.getElementById("projectLinks");
+
+          if (projects.style.display === "none") {
+            projects.style.display = "block";
+          } else {
+            projects.style.display = "none";
+          }
+        }
+      </script>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+
+      <ul>
+        <li>Getting Started with Artificial Intelligence â€“ IBM SkillBuild</li>
+        <li>Fundamentals of AI â€“ IBM SkillBuild</li>
+      </ul>
+    </section>
+
+    <section id="internships">
+      <h2>Internships</h2>
+
+      <p>Web Development Internship</p>
+      <p>
+        Worked on creating responsive and modern websites using HTML, CSS, and
+        JavaScript.
+      </p>
+    </section>
+
+    <section id="goals">
+      <h2>Career Goal</h2>
+
+      <p>
+        My goal is to become a skilled AI Engineer and develop intelligent
+        applications using Artificial Intelligence, Machine Learning, and modern
+        technologies.
+      </p>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+
+      <ul>
+        <li>Completed AI Certifications from IBM SkillBuild</li>
+        <li>Built multiple web development projects</li>
+        <li>Learning advanced AI and Machine Learning concepts</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: bhavyasrilakshmiande@gmail.com</p>
+      <button
+        onclick="window.open('https://www.linkedin.com/in/ande-bhavya-sri-lakshmi-4a4962352', '_blank')"
+      >
+        LinkedIn Profile
+      </button>
+    </section>
+    <button onclick="topFunction()" id="topBtn">â†‘</button>
+    <footer>
+      <a href="https://www.instagram.com/b4_bhavya_" target="_blank">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram"
+          width="35"
+        />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/ande-bhavya-sri-lakshmi-4a4962352"
+        target="_blank"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn"
+          width="35"
+        />
+      </a>
+
+      <p>Â© 2026 My Portfolio Website</p>
+    </footer>
+
+    <script>
+      function showContent() {
+        var content = document.getElementById("aboutContent");
+
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function topFunction() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+  </html>
